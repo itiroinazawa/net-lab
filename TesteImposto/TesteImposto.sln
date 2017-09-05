@@ -1,11 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteImposto", "TesteImposto\TesteImposto.csproj", "{B477192F-814E-4710-8DBC-244AD89157C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imposto.Core", "Imposto.Core\Imposto.Core.csproj", "{2339C0B3-1E95-4CD3-BFBA-64B377857016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imposto.Business", "Imposto.Business\Imposto.Business.csproj", "{C8CECE78-295C-4066-AB7B-B4A8D6151002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imposto.Helpers", "Imposto.Helpers\Imposto.Helpers.csproj", "{B09AE9A9-1936-451F-B0A7-AC8B05EEE7BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imposto.DAL", "Imposto.DAL\Imposto.DAL.csproj", "{4FB97FAB-508D-4FC2-8285-352976F4AF82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imposto.Domain", "Imposto.Domain\Imposto.Domain.csproj", "{4FD97C0B-2E18-4FEF-8616-E37D430BC559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Imposto.Test", "Imposto.Test\Imposto.Test.csproj", "{3E1AB49B-8B1A-45D5-8246-3B2BB7B4825A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +31,31 @@ Global
 		{2339C0B3-1E95-4CD3-BFBA-64B377857016}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2339C0B3-1E95-4CD3-BFBA-64B377857016}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2339C0B3-1E95-4CD3-BFBA-64B377857016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CECE78-295C-4066-AB7B-B4A8D6151002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CECE78-295C-4066-AB7B-B4A8D6151002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CECE78-295C-4066-AB7B-B4A8D6151002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CECE78-295C-4066-AB7B-B4A8D6151002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B09AE9A9-1936-451F-B0A7-AC8B05EEE7BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B09AE9A9-1936-451F-B0A7-AC8B05EEE7BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B09AE9A9-1936-451F-B0A7-AC8B05EEE7BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B09AE9A9-1936-451F-B0A7-AC8B05EEE7BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB97FAB-508D-4FC2-8285-352976F4AF82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB97FAB-508D-4FC2-8285-352976F4AF82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB97FAB-508D-4FC2-8285-352976F4AF82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB97FAB-508D-4FC2-8285-352976F4AF82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD97C0B-2E18-4FEF-8616-E37D430BC559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD97C0B-2E18-4FEF-8616-E37D430BC559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD97C0B-2E18-4FEF-8616-E37D430BC559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD97C0B-2E18-4FEF-8616-E37D430BC559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E1AB49B-8B1A-45D5-8246-3B2BB7B4825A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E1AB49B-8B1A-45D5-8246-3B2BB7B4825A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E1AB49B-8B1A-45D5-8246-3B2BB7B4825A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E1AB49B-8B1A-45D5-8246-3B2BB7B4825A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3EEC145-16FC-4DD2-8AB7-1BA02044E24B}
 	EndGlobalSection
 EndGlobal

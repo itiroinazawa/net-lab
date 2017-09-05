@@ -1,18 +1,29 @@
-﻿using Imposto.Core.Domain;
-using System;
+﻿using Imposto.Business;
+using Imposto.Domain;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Imposto.Core.Service
 {
     public class NotaFiscalService
     {
-        public void GerarNotaFiscal(Domain.Pedido pedido)
+        /// <summary>
+        /// Metodo exposto responsavel por gerar a nota fiscal
+        /// </summary>
+        /// <param name="pedido">Pedido</param>
+        public void GerarNotaFiscal(Pedido pedido)
+        {            
+            NotaFiscalBusiness business = new NotaFiscalBusiness();
+            business.EmitirNotaFiscal(pedido);
+        }
+
+        /// <summary>
+        /// Metodo responsavel por retornar o agrupamento de bases e valores de ICMS e IPI por CFOP
+        /// </summary>
+        /// <returns>Lista encontrada</returns>
+        public List<AgrupamentoCFOP> ConsultarAgrupamentoCFOP()
         {
-            NotaFiscal notaFiscal = new NotaFiscal();
-            notaFiscal.EmitirNotaFiscal(pedido);
+            NotaFiscalBusiness business = new NotaFiscalBusiness();
+            return business.ConsultarAgrupamentoCFOP();           
         }
     }
 }

@@ -75,12 +75,22 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Imposto.Core\Imposto.Core.csproj">
       <Project>{2339c0b3-1e95-4cd3-bfba-64b377857016}</Project>
       <Name>Imposto.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Imposto.Domain\Imposto.Domain.csproj">
+      <Project>{4fd97c0b-2e18-4fef-8616-e37d430bc559}</Project>
+      <Name>Imposto.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Imposto.Helpers\Imposto.Helpers.csproj">
+      <Project>{b09ae9a9-1936-451f-b0a7-ac8b05eee7bd}</Project>
+      <Name>Imposto.Helpers</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
